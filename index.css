@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Open+Sans:wght@700&display=swap');
+
+body { 
+    margin: 0px;
+    padding: 0px;  
+}
+
+div {
+    box-sizing: border-box;   
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    border-bottom: solid ;
+    border-color: #ffffff33;
+    padding: 30px;
+    background-color:#1a1a1a;
+}
+
+.header > button {
+    border: none;
+    background: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.Headphone {
+    background-color:#1a1a1a;
+    background-image: url("./starter-code/assets/home/mobile/image-header.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.websiteMenu__menuList {
+    display: none;
+}
+
+.textPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 40px;
+}
+
+.textPart__definition {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff78;
+    letter-spacing: 5px;
+}
+
+.textPart__productName {
+    font-size: 38px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.textPart__productDescription {
+    text-align: center;
+    color:#ffffffba;
+    margin-bottom: 20px;
+}
+
+.textPart__buttonSeeProduct {
+    padding: 15px  25px;
+    background-color: rgb(217 125 74);
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    
+}
+
+.item__photo {
+    width: 60%;
+   
+}
+
+
