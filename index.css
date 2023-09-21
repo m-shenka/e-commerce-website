@@ -40,7 +40,7 @@ img {
 
 .Headphone {
     background-color:#1a1a1a;
-    background-image: url("./starter-code/assets/home/mobile/image-header.jpg");
+    background-image: url("./assets/home/mobile/image-header.jpg");
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -83,6 +83,7 @@ img {
 
 .textPart__buttonSeeProduct {
     padding: 15px  25px;
+    font-family: 'Kumbh Sans', sans-serif ;
     background-color: rgb(217 125 74);
     color: white;
     border: none;
@@ -139,4 +140,55 @@ img {
 
 .item__button > span {
     margin-right: 10px;
+}
+
+.speaker__photo {
+    width: 60%;
+    margin-bottom: 30px;
+    
+}
+
+.speaker__zx9speaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(217 125 74) ;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./assets/home/desktop/pattern-circles.svg);
+    background-position: center 300%;
+    background-repeat: no-repeat;
+    background-size: 167%;
+}
+
+.speaker__name {
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.speaker__productDescription {
+    text-align: center;
+    color:#ffffffba;
+    margin-bottom: 20px;
+
+}
+
+
+.speaker__buttonSeeProduct {
+    padding: 15px  25px;
+    background-color: black;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Kumbh Sans', sans-serif;
+
+
 }
