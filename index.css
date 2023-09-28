@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Open+Sans:wght@300;400;500;700&display=swap');
 
 body { 
-    margin: 0px;
-    padding: 0px;  
+    font-family: 'Open Sans', sans-serif;
 }
 
 div {
@@ -38,16 +36,13 @@ img {
 
 }
 
-.Headphone {
+.newProduct{
     background-color:#1a1a1a;
     background-image: url("./assets/home/mobile/image-header.jpg");
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-}
-
-.websiteMenu__menuList {
-    display: none;
+    margin-bottom: 50px;
 }
 
 .textPart {
@@ -55,13 +50,11 @@ img {
     flex-direction: column;
     align-items: center;
     color: white;
-    font-family: 'Open Sans', sans-serif;
     padding: 40px;
 }
 
 .textPart__definition {
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
     color: #ffffff78;
     letter-spacing: 5px;
 }
@@ -69,70 +62,84 @@ img {
 .textPart__productName {
     font-size: 38px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
     margin: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .textPart__productDescription {
     text-align: center;
     color:#ffffffba;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.textPart__buttonSeeProduct {
+.shopButton {
     padding: 15px  25px;
-    font-family: 'Kumbh Sans', sans-serif ;
     background-color: rgb(217 125 74);
     color: white;
     border: none;
     text-transform: uppercase;
-    
+    font-weight: 500;
 }
 
-.item__photo {
+.productPreview__photo {
     width: 40%;
     position: absolute;
     top: -28%;
    
 }
 
-.item {
+.productPreview {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding-top: 50px;
     padding-bottom: 15px;
-    background-color: rgb(238 238 238);
-    margin: 50px 0px;
-    border-radius: 10px;
     position: relative;
+    margin-bottom: 50px;
 }
 
-.item__name {
+.listOfProducts__container {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgb(238 238 238);
+    border-radius: 10px;
+}
+
+.listOfProducts__container--normalSpacing {
+    margin-bottom: 50px;
+}
+
+.listOfProducts__container--bigSpacing {
+    margin-bottom: 80px;
+}
+
+.productPreview__name {
     width: 100%;
     text-align: center;
-    font-family: 'Kumbh Sans', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 20px;
 }
 
-.item__button {
+.productPreview__shopButton {
     display: flex;
     background: none;
     border: none;
     text-transform: uppercase;
     padding: 0px;
+    color: rgb(122 122 122);
 }
 
+.shopButton > img {
+    margin-left: 10px;
+}
 
-.HeadphonesSpeakersEarphones {
+.listOfProducts {
     padding: 20px;
 }
 
-.item__productLink {
+.productPreview__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,39 +149,38 @@ img {
     margin-right: 10px;
 }
 
-.speaker__photo {
+.zx9speaker__photo {
     width: 60%;
     margin-bottom: 30px;
     
 }
 
-.speaker__zx9speaker {
+.zx9speaker {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(217 125 74) ;
     color: white;
-    font-family: 'Open Sans', sans-serif;
     padding: 30px;
-    border-radius: 10px;
     background-image: url(./assets/home/desktop/pattern-circles.svg);
     background-position: center 300%;
     background-repeat: no-repeat;
     background-size: 167%;
+    border-radius: 10px;
 }
 
-.speaker__name {
+.speakerzx9__name {
     font-size: 38px;
     line-height: 40px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
     margin: 0px;
     margin-bottom: 20px;
     text-transform: uppercase;
     margin: 0px;
+    font-weight: bold;
 }
 
-.speaker__productDescription {
+.speakerzx9__description {
     text-align: center;
     color:#ffffffba;
     margin-bottom: 20px;
@@ -182,13 +188,150 @@ img {
 }
 
 
-.speaker__buttonSeeProduct {
-    padding: 15px  25px;
+.speakerzx9__shopButton {
     background-color: black;
     color: white;
-    border: none;
-    text-transform: uppercase;
-    font-family: 'Kumbh Sans', sans-serif;
+}
 
+.boughtarea  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px;
+    color: black
+}
+
+.boughtarea__big {
+    padding: 115px 20px;
+    background-image: url(./assets/home/mobile/image-speaker-zx7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    text-transform: uppercase;
+}
+
+.boughtarea__shopButton {
+    background: none;
+    color: black;
+    border: solid;
+    border-color: black;
+    text-transform: uppercase;
+}
+
+.boughtarea__name {
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: bold;
 
 }
+
+.earphonesyx1 {
+    padding: 120px 0px;
+    background-image: url(./assets/home/mobile/image-earphones-yx1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+
+.boughtarea__name {
+    font-size: 33px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;     
+}
+
+
+.earphonesyx1__buttonSeeProduct{
+    padding: 15px  25px;
+    background: none;
+    color: black;
+    border: solid;
+    border-color: black;
+    text-transform: uppercase;
+}
+
+
+.aboutCompany {
+   background: none;
+}
+
+.aboutCompany__appeal {
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 29px;
+}
+
+.aboutCompany__appeal--best {
+    color: rgb(217 125 74) ;
+}
+
+.aboutCompany__description {
+    text-align: center;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.contactInformation {        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    border-top: 5px solid;
+    padding: 30px;
+    background-color:#1a1a1a;
+    border-image-slice: 1;
+    position: relative;
+}
+
+.websiteMenu__menuList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.websiteMenu__menuList > li > a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.contactInformation__description {
+    text-align: center;
+    color: grey;
+    margin-bottom: 20px;
+
+}
+
+.contactInformation__copyright {
+    color: grey;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+
+.contactInformation__socialMedias {
+    display: flex;
+}
+
+.contactInformation__socialMedias > a {
+    margin-right: 20px;
+
+}
+
+.contactInformation__style {
+    width: 30%;
+    background-color: rgb(217 125 74);
+    padding: 2px;
+    position: absolute;
+    top: -0.9%;
+}
+
