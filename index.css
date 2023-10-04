@@ -534,6 +534,7 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         padding: 100px 30px;
+        padding-left: 0px;
     }
 
     .aboutCompany__description {
