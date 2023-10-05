@@ -102,6 +102,10 @@ img {
     border-radius: 5px;
 }
 
+.newProductImg__mobile {
+    display: none;
+}
+
 .product__text {
     display: flex;
     flex-direction: column;
@@ -133,6 +137,10 @@ img {
 .productPrice {
     font-weight: bold;
     margin-bottom: 30px;
+}
+
+.productPrice__mobile {
+    display: none;
 }
 
 .numberOfProducts {
@@ -522,4 +530,267 @@ button:hover {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 899px) {
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    
+    .header__websiteMenu {
+        display: none;
+    }
+
+
+    .header {
+        max-width: 100%;
+        background-color:#1a1a1a;
+        margin-bottom: 20px;
+    }
+
+    .header__menuIcon {
+        display: block;
+    }
+
+    .header__inner {
+        display: flex;
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+    .header__websiteMenu {
+        display: none;
+    }
+
+    .goBack {
+        margin-bottom: 40px;
+    }
+
+    .product {
+        flex-direction: column;
+        margin-bottom: 50px;
+
+    }
+
+    .newProductImg__mobile {
+        display: inline;
+        width: 100%;
+    }
+
+    .newProductImg__desktop {
+        display: none;
+    }
+
+    .product__img {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .product__text {
+        align-items: center;
+    }
+
+    .productDescription {
+        text-align: center;
+    }
+
+    .productPrice__mobile {
+        display: inline;
+        font-size: 12px;
+        color: rgb(133 133 133);
+        margin-bottom: 50px;
+        background: none;
+        border: none;
+        font-weight: lighter;
+        margin-right: 15px;
+    }
+    
+    .paragraphs {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stylishPhoto {
+        display: none;
+    }
+
+    .paragraphs__features {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .inTheBoxList {
+        text-align: left;
+    }
+
+    .productsAnsSee {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .productsAnsSee__product {
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .productsAnsSee__img {
+        width: 80%;
+    }
+
+    .productsAnsSee__name {
+        font-size: 22px;
+    }
+
+    .productSet {
+        flex-direction: column;
+    }
+
+    .listOfProducts__container {
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .listOfProducts__container {
+        margin-bottom: 90px;
+    }
+
+    .personAndDiscription {
+        flex-direction: column;
+        margin-bottom: 90px;
+    }
+
+    .person__desktopImg {
+        display: none;
+    }
+
+    .person__mobileImg {
+        display: inline;
+        border-radius: 10px;
+    }
+
+    .person {
+        margin-bottom: 30px;
+        background: none;
+    }
+
+    .aboutCompany {
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+
+    .aboutCompany__appeal, .aboutCompany__description {
+        text-align: center;
+
+    }
+
+    .aboutCompany__appeal {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .bottomNav {
+        max-width: 100%;
+        background-color:#1a1a1a;
+    }
+
+    .contactInformation {        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        border-top: 5px solid;
+        padding: 30px 0px;
+        background-color:#1a1a1a;
+        border-image-slice: 1;
+        position: relative;
+    }
+    
+    
+    .contactInformation__description {
+        text-align: center;
+        color: grey;
+        margin-bottom: 20px;
+
+    }
+
+    .contactInformation__copyright {
+        color: grey;
+        margin-bottom: 20px;
+        font-weight: 600;
+        text-align: center;
+        font-size: 15px;
+
+    }
+
+    .contactInformation__paragraphs {
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+
+    .contactInformation__socialMedias {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contactInformation__socialMedias > a {
+        margin-right: 20px;
+
+    }
+
+    .contactInformation__style {
+        width: 50%;
+        background-color: rgb(217 125 74);
+        padding: 2px;
+        position: absolute;
+        top: -0.9%;
+        left: 25%;
+    }
+
+    .contactInformation__leftPart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .websiteMenu__menuList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        list-style-type: none;
+        padding: 0px;
+    }
+    
+    .websiteMenu__menuList > li > a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        line-height: 50px;
+    }
+
+    .header__websiteMenu {
+        display: none;
+    }
+
+    .contactInformation__top {
+        flex-direction: column;
+    }
+
+    .contactInformation__bottom {
+        flex-direction: column;
+    }
+    
+    .websiteMenu {
+        margin: 30px 0px;
+    }
+    
+    .websiteMenu__menuList > li {
+        margin: 0px;
+    }
+    
+
+
+}
 
