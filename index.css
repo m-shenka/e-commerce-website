@@ -8,7 +8,7 @@ body {
 .container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 10px;
 }
 
 div {
@@ -23,6 +23,8 @@ img {
 .header {
     max-width: 100%;
     background-color:#1a1a1a;
+    position: sticky;
+    top: 0;
 }
 
 .header > .container {
@@ -97,8 +99,7 @@ img {
 .productPreview__photo {
     width: 130px;
     position: absolute;
-    top: -28%;
-   
+    top: -28%; 
 }
 
 .productPreview {
@@ -128,6 +129,7 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 20px;
+    color: black;
 }
 
 .productPreview__shopButton {
@@ -160,8 +162,7 @@ img {
 .zx9speaker__photo {
     max-width: 100%;
     width: 60%;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px;  
 }
 
 .zx9speaker {
@@ -195,7 +196,6 @@ img {
     margin-bottom: 40px;
 
 }
-
 
 .speakerzx9__shopButton {
     background-color: black;
@@ -275,7 +275,6 @@ img {
     border-radius: 10px;
 }
 
-
 .aboutCompany {
    background: none;
 }
@@ -339,7 +338,6 @@ img {
     font-weight: 600;
     text-align: center;
     font-size: 15px;
-
 }
 
 .contactInformation__paragraphs {
@@ -354,7 +352,6 @@ img {
 
 .contactInformation__socialMedias > a {
     margin-right: 20px;
-
 }
 
 .contactInformation__style {
@@ -385,13 +382,223 @@ a:hover {
     cursor: pointer;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: rgb(114 76 55 / 65%);
+}
+
 .bottomNav {
     max-width: 100%;
     background-color:#1a1a1a;
 }
 
+.bottomNav > .container {
+    padding: 0px 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.checkoutFlow {
+    background-color: rgb(241 241 241);
+}
+
+.goBack {
+    font-size: 12px;
+    color: rgb(133 133 133);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+}
+
+.checkoutPage__container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.container__checkout {
+    width: 100%;
+}
+
+.checkoutPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkoutPage > .checkout {
+    flex: 1 0 60%;
+}
+
+.checkoutPage > .summary {
+    flex: 1 0 40%;
+    height: 50%;
+    background-color: rgb(241 241 241);
+}
+
+.checkout__title {
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.checkout__section {
+    color: rgb(217 125 74);
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.infoField {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo {
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.infoField__input {
+    padding: 13px;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: #80808036;
+    margin-bottom: 15px;
+}
+
+.infoField__input--last {
+    margin-bottom: 0px;
+}
 
 
+.checkout__form {
+    margin-bottom: 30px;
+}
+
+.nameAndEmail, .phoneNumber, .zipAndCity, .country, .emoneyNumberPin, .paymentMethod {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoField__half {
+    flex: 0 0 48%;
+    
+}
+
+.summary__title {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.productInBox {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.productInBox__photo {
+    width: 60%;
+    border-radius: 5px;
+}
+
+
+.infoField__paymentMethod {
+    padding: 10px;
+    border: solid;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: #80808036;
+    margin-bottom: 10px;
+}
+
+.infoField__paymentMethod:has(input:checked) {
+    border: 1px solid rgb(217 125 74);
+}
+
+input[type="radio" i] {
+   accent-color: rgb(217 125 74); 
+}
+
+.productInBox__text {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.nameAndPrice {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameAndPrice__name {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.nameAndPrice__price {
+    color: rgb(160 158 158);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.numberOfThings {
+    color: rgb(160 158 158);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.priceComponents__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.summary__products {
+    margin-bottom: 30px;
+}
+
+.productInBox:last-child {
+    margin-bottom: 0px;
+}
+
+.priceComponents__title {
+    text-transform: uppercase;
+    color: rgb(160 158 158);
+    font-size: 14px;
+}
+
+.priceComponents__price {
+    color: black;
+    font-weight: bold;
+}
+
+.priceComponents__item:last-child {
+    margin: 20px 0px;
+}
+
+.priceComponents__price--finish {
+    color: rgb(217 125 74);
+}
+
+.summary__shopButton {
+    width: 100%;
+}
+
+.summary {
+    margin-bottom: 30px;
+}
 
 @media only screen and (min-width: 900px) {
     .container {
@@ -399,6 +606,11 @@ a:hover {
         max-width: 100%;
         margin: 0 auto;
         padding: 0 40px;
+    }
+
+
+    .header {
+        position: relative;
     }
 
     .header > .container {
@@ -602,6 +814,57 @@ a:hover {
 
     .aboutCompany {
         margin-right: 20px;
+    }
 
+    .checkoutFlow > .container {
+        padding: 0 100px;
+    }
+
+    .checkoutPage {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .checkoutPage > .checkout {
+        margin-right: 20px;
+        margin-bottom: 100px;
+    }
+
+    .nameAndEmail, .phoneNumber, .zipAndCity, .country, .emoneyNumberPin, .paymentMethod {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .] {
+        margin-bottom: 0px;
+    }
+    
+    .adress {
+        margin-bottom: 20px;
+    }
+
+    .infoField__paymentMethod:last-child {
+        margin-bottom: 0;
+    }
+
+    .goBack {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .checkoutPage > .summary {
+        flex: 1 0 40%;
+        height: 50%;
+        background-color: white;
+    }
+
+    .summary {
+        margin-bottom: 0px;
+    }
+
+    .infoField__input {
+        margin-bottom: 0px;
     }
 }

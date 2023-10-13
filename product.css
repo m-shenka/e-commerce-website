@@ -325,6 +325,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #1a1a1a;
 }
 
 .productPreview__photo {
@@ -525,6 +526,10 @@ a:hover {
 
 button:hover {
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 899px) {

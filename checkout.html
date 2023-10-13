@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet">
+    <title>Checkout flow</title>
+</head>
+<body>
+    <div class="checkoutFlow">
+        <div class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#" class="header__menuIcon"><img src="./assets/shared/tablet/icon-hamburger.svg" alt="the white menue icon"/></a>
+                    <a href="#"><img src="./assets/shared/desktop/logo.svg" class="header__logo" alt="the logo of the company - text Audiophile"/></a>
+                    <nav class="websiteMenu header__websiteMenu ">
+                        <ul class="websiteMenu__menuList">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">headphones</a></li>
+                        <li><a href="#">speakers</a></li>
+                        <li><a href="#">earphones</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__cta" type="button"><img src="./assets/shared/desktop/icon-cart.svg"/></button>
+                </div>
+            </div>
+        </div>
+        <div class="container container__checkout">
+            <div class="goBack">
+                <a>Go Back</a>
+            </div>
+            <form class="checkoutPage">
+                <div class="checkoutPage__container checkout">
+                    <h4 class="checkout__title">checkout</h4>
+                    <div class="checkout__form">
+                        <div class="checkout__section">billing details</div>
+                        <div class="billingDetails">
+                            <div class="nameAndEmail">
+                                <div class="infoField infoField__half">
+                                    <label for="name" class="contactInfo">Name</label>
+                                    <input id="name" type="text" name="name" placeholder="Alexei Ward" class="infoField__input">
+                                </div>
+                                <div class="infoField infoField__half">
+                                    <label for="email" class="contactInfo">Email Adress</label>
+                                    <input id="email" type="text" name="email" placeholder="alexei@mail.com" class="infoField__input">
+                                </div>    
+                            </div>
+                            <div class="phoneNumber">
+                                <div class="infoField infoField__half">
+                                    <label for="number" class="contactInfo">Phone Number</label>
+                                    <input id="number" type="text" name="number" placeholder="+1202-555-0136" class="infoField__input infoField__input--last">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout__form">
+                        <div class="checkout__section">shipping info</div>
+                        <div class="billingDetails">
+                            <div class="adress">
+                                <div class="infoField">
+                                    <label for="adress" class="contactInfo">Adress</label>
+                                    <input id="adress" type="text" name="adress" placeholder="1137 Williams Avenue" class="infoField__input">
+                                </div>   
+                            </div>
+                            <div class="zipAndCity">
+                                <div class="infoField infoField__half">
+                                    <label for="zip" class="contactInfo">ZIP Code</label>
+                                    <input id="zip" type="text" name="zip" placeholder="10001" class="infoField__input">
+                                </div>
+                                <div class="infoField infoField__half">
+                                    <label for="city" class="contactInfo">City</label>
+                                    <input id="city" type="text" name="city" placeholder="NewYork" class="infoField__input">
+                                </div>
+                            </div>
+                            <div class="country">
+                                <div class="infoField infoField__half">
+                                    <label for="country" class="contactInfo">Country</label>
+                                    <input id="country" type="text" name="country" placeholder="United States" class="infoField__input infoField__input--last">
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout__form">
+                        <div class="checkout__section">payment details</div>
+                        <div class="billingDetails">
+                            <div class="paymentMethod">
+                                <div class="contactInfo infoField__half">Payment Method</div>
+                                <div class="infoField infoField__half">
+                                    <div class="infoField__paymentMethod">
+                                        <input id="paymentType" type="radio" name="paymentType" value="e-money" placeholder="e-money" class="infoField__input">  
+                                        <label for="paymentType" class="contactInfo">e-Money</label>
+                                    </div>
+                                    <div class="infoField__paymentMethod">
+                                        <input id="paymentType" type="radio" name="paymentType" value="cash" placeholder="Cash on Delivery" class="infoField__input">  
+                                        <label for="paymentType" class="contactInfo">Cash on Delivery</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="emoneyNumberPin">
+                                <div class="infoField infoField__half">
+                                    <label for="emoneyNumber" class="contactInfo">e-money Number</label>
+                                    <input id="emoneyNumber" type="text" name="emoneyNumber" placeholder="238521993" class="infoField__input">
+                                </div>
+                                <div class="infoField infoField__half">
+                                    <label for="emoneyPin" class="contactInfo">e-money PIN</label>
+                                    <input id="emoneyPin" type="text" name="emoneyPin" placeholder="6891" class="infoField__input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkoutPage__container summary">
+                    <h5 class="summary__title">summary</h5>
+                    <div class="summary__products"> 
+                        <a href="#" class="productInBox">
+                            <div class="productInBox__img">
+                                <img class="productInBox__photo" src="./assets/cart/image-xx99-mark-two-headphones.jpg" alt="the black headphones preview image"/>
+                            </div>
+                            <div class="productInBox__text">
+                                <div class="nameAndPrice">
+                                    <span class="nameAndPrice__name">xx 99 mk ii</span>
+                                    <span class="nameAndPrice__price">$2,999</span>
+                                </div>
+                                <div class="numberOfThings">
+                                    <span>x1</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="productInBox">
+                            <div class="productInBox__img">
+                                <img class="productInBox__photo" src="./assets/cart/image-xx59-headphones.jpg" alt="the white headphones preview image"/>
+                            </div>
+                            <div class="productInBox__text">
+                                <div class="nameAndPrice">
+                                    <span class="nameAndPrice__name">xx59</span>
+                                    <span class="nameAndPrice__price">$899</span>
+                                </div>
+                                <div class="numberOfThings">
+                                    <span>x2</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="productInBox">
+                            <div class="productInBox__img">
+                                <img class="productInBox__photo" src="./assets/cart/image-yx1-earphones.jpg" alt="the black earphones preview image"/>
+                            </div>
+                            <div class="productInBox__text">
+                                <div class="nameAndPrice">
+                                    <span class="nameAndPrice__name">yx1</span>
+                                    <span class="nameAndPrice__price">$599</span>
+                                </div>
+                                <div class="numberOfThings">
+                                    <span>x1</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="priceComponents">
+                        <div class="priceComponents__item">
+                            <span class="priceComponents__title">total</span>
+                            <span class="priceComponents__price">$ 5,369 </span>
+                        </div>
+                        <div class="priceComponents__item">
+                            <span class="priceComponents__title">shipping</span>
+                            <span class="priceComponents__price">$ 50</span>
+                        </div>
+                        <div class="priceComponents__item">
+                            <span class="priceComponents__title">vat (included)</span>
+                            <span class="priceComponents__price">$ 1,079 </span>
+                        </div>
+                        <div class="priceComponents__item">
+                            <span class="priceComponents__title">grand total</span>
+                            <span class="priceComponents__price priceComponents__price--finish">$ 5,466</span>
+                        </div>
+                    </div>
+                    <button class="shopButton summary__shopButton">continue & pay</button>
+                </div>
+            </form>
+        </div>
+        <footer class="bottomNav">
+            <div class="container">
+                <div class="contactInformation"> 
+                    <div class="contactInformation__top"> 
+                        <div class="contactInformation__style"></div>
+                        <a href="#"><img src="./assets/shared/desktop/logo.svg" class="contactInformation__logo" alt="the logo of the company - text Audiophile"/></a>
+                        <nav class="websiteMenu">
+                            <ul class="websiteMenu__menuList">
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">headphones</a></li>
+                                <li><a href="#">speakers</a></li>
+                                <li><a href="#">earphones</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="contactInformation__bottom">
+                        <div class="contactInformation__paragraphs"> 
+                            <p class="contactInformation__description">Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
+                            <p class="contactInformation__copyright">Copyright 2021. All Rights Reserved</p>
+                        </div> 
+                        <div class="contactInformation__socialMedias">
+                            <a href="#"><img src="./assets/shared/desktop/icon-facebook.svg" alt="the white Facebook icon"/></a>
+                            <a href="#"><img src="./assets/shared/desktop/icon-twitter.svg" alt="the white x icon"/></a>
+                            <a href="#"><img src="./assets/shared/desktop/icon-instagram.svg" alt="the white Instagram icon"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</body>
+</html>
